@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="evg.podtrack"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".TitleScreen" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>    
+        </activity>
+        
+        <activity android:label="@string/queueScreenLabel" android:name="evg.podtrack.QueueScreen">
+        </activity>
+		
+		<activity android:label="@string/subsScreenLabel" android:name="evg.podtrack.SubsListScreen">
+        </activity>
+        
+        <activity android:label="@string/downloadedScreenLabel" android:name="evg.podtrack.DownloadedScreen">
+        </activity>
+		
+		<activity android:label="@string/optionScreenLabel" android:name="evg.podtrack.OptionScreen">
+        </activity>
+        
+	    <activity android:label="@string/subViewScreenLabel" android:name="evg.podtrack.SubscriptionScreen">
+        </activity>
+        
+	    <activity android:label="@string/feedItemViewScreenLabel" android:name="evg.podtrack.FeedItemViewScreen">
+        </activity>
+        
+	    <provider android:name=".DbContentProvider" android:authorities="evg.podtrack.provider.db" android:exported="false">
+	    </provider>
+	    
+	    <service android:name=".PlayerService" />
+	    
+    </application>
+
+</manifest>

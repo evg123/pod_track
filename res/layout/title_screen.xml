@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    
+    <TextView android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:layout_gravity="center_horizontal"
+    	android:gravity="center"
+    	android:layout_weight='18'
+    	android:layout_margin="@dimen/titleMargins"
+    	android:textSize="@dimen/titleSize"
+    	android:text="@string/titleStr" 
+    	android:id="@+id/titleTxtView">
+    </TextView>
+    
+    <Button android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:layout_weight='8' 
+    	android:layout_margin="@dimen/titleMargins" 
+    	android:text="@string/queueStr" 
+    	android:id="@+id/queueBtn">
+    </Button>
+    
+    <Button
+        android:id="@+id/downloadedBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/titleMargins"
+        android:layout_weight="8"
+        android:text="@string/downloaded" >
+
+    </Button>
+    
+    <Button android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:layout_weight='8' 
+    	android:layout_margin="@dimen/titleMargins" 
+    	android:text="@string/subsStr" 
+    	android:id="@+id/subsBtn">
+    </Button>
+    
+    <Button android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:layout_weight='8' 
+    	android:layout_margin="@dimen/titleMargins" 
+    	android:text="@string/optionsStr" 
+    	android:id="@+id/optionsBtn">
+    </Button>
+    
+    <TextView android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:layout_gravity="center_horizontal"
+    	android:gravity='right'
+       	android:layout_weight='1'
+    	android:layout_margin="@dimen/titleMargins" 
+    	android:textSize="@dimen/footerSize"
+    	android:text="@string/footerStr" 
+    	android:id="@+id/footerTxtView">
+    </TextView>
+    	
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleMargins">10sp</dimen>
+    <dimen name="titleSize">32sp</dimen>
+    <dimen name="footerSize">10sp</dimen>
+    <dimen name="queueMargins">5sp</dimen>
+    <dimen name="subsMargins">5sp</dimen>
+    <dimen name="queueTitleSize">32sp</dimen>
+    <dimen name="subsTitleSize">32sp</dimen>
+</resources>

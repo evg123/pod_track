@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="Basic Options">
+		<CheckBoxPreference 
+			android:title="Screen On During Run"
+			android:defaultValue="false"
+			android:summary="Do not enter sleep mode while timer is active"
+			android:key="alwaysOn">
+		</CheckBoxPreference>
+	</PreferenceCategory>
+
+</PreferenceScreen>

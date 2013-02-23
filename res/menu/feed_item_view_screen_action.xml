@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/play" android:showAsAction="ifRoom|withText" android:title="@string/play">
+    </item>
+    <item android:id="@+id/add_to_queue" android:showAsAction="ifRoom|withText" android:title="@string/add_to_queue"></item><item android:id="@+id/download" android:title="@string/download" android:showAsAction="ifRoom|withText"></item><item android:id="@+id/delete" android:showAsAction="ifRoom|withText" android:title="@string/delete"></item>
+    
+    
+    
+
+</menu>

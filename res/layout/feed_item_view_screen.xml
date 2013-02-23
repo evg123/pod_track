@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<TextView
+	    android:id="@+id/title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:padding="10dp"
+	    android:text="@string/testStringShort"
+	    android:textSize="16sp"
+	    android:textStyle="bold" />
+	
+	<TextView 
+ 	    android:id="@+id/file_link"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+	    android:padding="10dp"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:text="@string/testStringShort"
+    />
+	
+	<TextView 
+ 	    android:id="@+id/pub_date"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/file_link"
+	    android:padding="10dp"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:text="@string/testStringShort"
+    />
+	
+	<TextView 
+ 	    android:id="@+id/sub_name"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/pub_date"
+	    android:padding="10dp"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:text="@string/testStringShort"
+    />
+	
+	<TextView 
+ 	    android:id="@+id/description"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/sub_name"
+	    android:padding="10dp"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:text="@string/testStringLong"
+    />
+	
+	<TextView 
+ 	    android:id="@+id/item_id"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+	    android:padding="10dp"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:text="@string/testStringNumber"
+    />
+
+	<Button
+	    android:id="@+id/play_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/item_id"
+	    android:layout_marginRight="62dp"
+	    android:layout_marginTop="58dp"
+	    android:text="@string/play" />
+
+	<Button
+	    android:id="@+id/pause_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/play_btn"
+	    android:layout_alignBottom="@+id/play_btn"
+	    android:layout_toLeftOf="@+id/play_btn"
+	    android:text="@string/pause" />
+
+	<Button
+	    android:id="@+id/stop_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/pause_btn"
+	    android:layout_alignBottom="@+id/pause_btn"
+	    android:layout_toLeftOf="@+id/pause_btn"
+	    android:text="@string/stop" />
+    
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:text="@string/testStringLong"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:text="@string/testStringLong"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_file_link"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:visibility="invisible" />
+
+</LinearLayout>
